@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    text-align: center;
+    padding-top: 30px;
+}
+.menu {
+    text-align: center;
+    list-style: none;
+}
+.menu li {
+    float: left;
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    width: 300px;
+    border-right: 1px solid white;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+.li-submenu:hover {
+    padding-bottom: 9px;
+    box-sizing: border-box;
+}
+.menu li:hover {
+    background-color:slategrey;
+    cursor: pointer;
+}
+.sub-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+    margin-left: -25px;
+    text-align: center;
+
+}
+.sub-menu li {
+    clear: left;
+}
+.sub-menu li:hover {
+    background-color: slategrey;
+    font-weight: bold;
+    display: block;
+
+
+}
+.menu li:hover .sub-menu {
+    display: block;
+}
+.audio {
+    float: left;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.video { 
+    float: left;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+
+}
+video {
+    width: 60%;
+    height: 220px;
+}
+h1 {
+    padding-top: 10px;
+}
+
+footer {
+    position: absolute;
+    padding-bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 110px;
+    color: white;
+    text-align: center;
+} 
+
+
+
