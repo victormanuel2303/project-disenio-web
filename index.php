@@ -3,5 +3,5 @@
 ?>
 
 <script>
-    widow.location = "index.html";
+    window.location = "index.html";
 </script>
