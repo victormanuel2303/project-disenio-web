@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
+}
+body {
+    background-image: linear-gradient(white, black);
 }
 header {
     text-align: center;
@@ -55,20 +58,29 @@ header {
     display: block;
 }
 .audio {
-    float: left;
-    width: 50%;
-    height: 300px;
+    
+    width: 30%;
     text-align: center;
-    padding-top: 15px;
+    padding-bottom: 35px;
+    height: 380px;
+    margin-left: 200px;
+    border:black solid 2px;
+    border-radius: 10px; 
+    background-image: url(/imagenes/ee1674ca6e9b5c8f9798b061ed41308e66dc138a_hq.jpg);
+    color:white
 
 }
 
 .video { 
-    float: left;
-    width: 50%;
-    height: 300px;
+    
+    width: 30%;
+    height: 360px;
     text-align: center;
-
+    margin-left: 200px;
+    border:black solid 2px;
+    border-radius: 10px; 
+    color: white;
+    background-image: url(/imagenes/circuitos-dedos-tactil-tecnologia-wallpaper-preview.jpg);
 }
 video {
     width: 60%;
@@ -87,6 +99,39 @@ footer {
     color: white;
     text-align: center;
 } 
+.formulario {
+    width: 500px;
+    border: black solid 2px;
+    float:right ;
+    height: 870px;
+    margin-right: 200px;
+    border-radius: 10px;
+    background-image:url(/imagenes/fondos-pantalla-full-hd-animales_4.jpg);
+    color: white;
+}
+form {
+    padding: 5px;
+}
 
+label {
+    font-size: 13px;
+    color:black;
 
+}
+
+.lblEtiqueta {
+    width: 20%;
+
+}
+
+.divRow {
+    width: 90%;
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: row;
+}
+.Registrar {
+    padding-top: 25px;
+    padding-left: 270px;
+}
 

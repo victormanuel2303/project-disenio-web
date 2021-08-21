@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <title>Evaluación continua 2</title>
-
+    <title>Examen Final</title>
 </head>
 <body>
-    <header> 
+           
+    <header>  
         <img src="/imagenes/Victor Web.jpg" alt="logotipo" width="50%" height="100px">
     </header>
     <br>
@@ -42,23 +42,113 @@
     <br>
     <br>
     <br>
+    <div class="formulario">
+        <form action="registrarCliente.php" method="POST">
+            <h1>Regístrate y te llamaremos</h1>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtNombre">Escriba su Nombre</label>
+                </div>
+                <input type="text" id="txtNombre" name="nombre" required placeholder="Nombre y Apellido">
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="cbxTipoDoc">Tipo de Documento</label>
+                </div>
+                <select name="tipoDoc" id="cbxTipoDoc">
+                    <option value="1">DNI</option>
+                    <option value="2">Pasaporte</option>
+                    <option value="3">Carnet de Extranjería</option>
+                    <option value="4">RUC</option>
+                </select>
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtNroDoc">Número de Documento</label>
+                </div>
+                <input type="text" id="txtNroDoc" name="nroDoc" required placeholder="Ingrese número de Documento" maxlength="11">
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtNroCel">Número de Celular</label>
+                </div>
+                <input type="text" id="txtNroCel" name="nroCel" required placeholder="Ingrese número de Celular" maxlength="9">
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtNroCel">Escoja el prefijo de su país</label>
+                </div>
+                <select name="prefCel" id="txtNroCel">
+                    <option value="1">Perú +51</option>
+                    <option value="2">Argentina +54</option>
+                    <option value="3">Bolivia +591</option>
+                    <option value="4">Brasil +55</option>
+                    <option value="4">Chile +56</option>
+                    <option value="4">Colombia +57</option>
+                    <option value="4">Ecuador +593</option>
+                    <option value="4">Paraguay +595</option>
+                    <option value="4">Uruguay +598</option>
+                    <option value="4">Venezuela +58</option>
+                </select>
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtDiaLlamada">Elija el día para llamarlo</label>
+                </div>
+                <input type="date" id="txtDiaLlamada" name="FechLlamada" title="Usar formato dd/mm/yyyy" required>
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtHora">Elige el rango para ser contactado</label>
+                </div>
+                <input type="checkbox" id="chkMañana" name="chkMañana"><label for="chkPromo">Mañana</label>
+                <input type="checkbox" id="chkTarde" name="chkTarde"><label for="chkDcto">Tarde</label>
+                <input type="checkbox" id="chkNoche" name="chkNoche"><label for="chkExoIgv">Noche</label>
+                <input type="checkbox" id="chkInfoWhat" name="chkInfoWhat"><label for="chkExoIgv">Información al Whatsapp</label>
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtCorreo">Escriba su Correo electrónico</label>
+                </div>
+                <input type="email" id="txtCorreo" name="correo" required placeholder="Escriba su Correo">
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtProduct">Escoja el producto en consulta</label>
+                </div>
+                <input type="checkbox" id="chkCpu" name="chkCpu"><label for="chkPromo">CPU</label>
+                <input type="checkbox" id="chkMonitor" name="chkMonitor"><label for="chkDcto">Monitores</label>
+                <input type="checkbox" id="chkTecla" name="chkTecla"><label for="chkExoIgv">Teclados</label>
+                <input type="checkbox" id="chkMouse" name="chkMouse"><label for="chkExoIgv">Mouse</label>
+            </div>
+            <div class="divRow">
+                <div class="lblEtiqueta">
+                    <label for="txtComentario">Comentarios</label>
+                </div>
+                <textarea name="comentario" id="" cols="50" rows="10" placeholder="Escribe alguna indicación o requerimiento"></textarea>
+            </div>
+            <div class="Registrar">
+                <input type="submit" value="Registrar">
+            </div>
+        </form>
+    </div>
     <article>
         <div class="audio">
-            <h1>¡Pulsa play para dar un salto en el tiempo de la música!</h1>
+            <h1>¡Pulsa play para dar un salto</h1> 
+            <h1>en el tiempo de la música!</h1>
+            <br>
             <img src="/imagenes/mqdefault.jpg" alt="imagendisco" width="200px" height="200px">
+            <br>
             <audio controls src="/audios/y2mate.com - No se  El Clon Techno LETRA.mp3"  ></audio>
         </div>
+        <br>
         <div class="video">
-            <h1>¡Aquí podrás revisar los ultimos adelantos tecnológicos!</h1>
+            <h1>¡Aquí podrás revisar los ultimos</h1>
+            <h1>adelantos tecnológicos!</h1>
+            <br>
             <video controls src="/videos/y2mate.com - TEC  Tendencias tecnológicas 2021_v144P.mp4"  ></video>
         </div>
-    </article>
-    <br>    
-    <br>    
-    <br>    
-    <br>    
-    <br>    
-    <br>    
+    </article>  
     <br>    
     <br>    
     <br>    
@@ -68,11 +158,14 @@
     <br>    
     <br>    
     <footer>
-        <h1>¡Síguenos en nuestras redes Sociales!</h1>
-        <img src="/imagenes/FACEBOOK.png" alt="icono_fb" width="50px" height="50px">
-        <img src="/imagenes/TWITTER.png" alt="icono_tw" width="50px" height="50px">
-        <img src="/imagenes/YOUTUBE.png" alt="icono_yt" width="50px" height="50px">
-    
+        <div>
+            <h1 class="redes">¡Síguenos en nuestras redes Sociales!
+                <br>
+                <a href="https://facebook.com/" target="_blank"><img src="/imagenes/FACEBOOK.png" alt="icono_fb" width="50px" height="50px"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="/imagenes/TWITTER.png" alt="icono_tw" width="50px" height="50px"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="/imagenes/YOUTUBE.png" alt="icono_yt" width="50px" height="50px"></a>
+            </h1>
+        </div>
     </footer>
 </body>
 </html> 
